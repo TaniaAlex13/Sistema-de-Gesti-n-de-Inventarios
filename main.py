@@ -25,3 +25,13 @@ def main():
             
          elif opcion == "2":
             inventario.mostrar_productos()
+            
+        elif opcion == "3":
+            id_producto = input("Ingrese el ID a buscar: ")
+            producto = inventario.buscar_producto(id_producto)
+
+            if producto:
+                print(producto)
+            else:
+                print("Producto no encontrado.")
+
