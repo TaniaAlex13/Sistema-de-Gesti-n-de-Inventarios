@@ -22,3 +22,10 @@ class Inventario:
                 return producto
         return None
 
+    def eliminar_producto(self, id_producto):
+        producto = self.buscar_producto(id_producto)
+        if producto:
+            self.productos.remove(producto)
+            print("Producto eliminado correctamente.")
+        else:
+            print("Producto no encontrado.")
