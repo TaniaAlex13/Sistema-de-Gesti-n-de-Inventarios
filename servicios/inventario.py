@@ -15,3 +15,10 @@ class Inventario:
         else:
             for producto in self.productos:
                 print(producto)
+
+    def buscar_producto(self, id_producto):
+        for producto in self.productos:
+            if producto.get_id() == id_producto:
+                return producto
+        return None
+
