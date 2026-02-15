@@ -35,3 +35,6 @@ def main():
             else:
                 print("Producto no encontrado.")
 
+        elif opcion == "4":
+            id_producto = input("Ingrese el ID a eliminar: ")
+            inventario.eliminar_producto(id_producto)
