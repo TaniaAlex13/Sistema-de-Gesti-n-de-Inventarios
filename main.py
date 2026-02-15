@@ -38,3 +38,7 @@ def main():
         elif opcion == "4":
             id_producto = input("Ingrese el ID a eliminar: ")
             inventario.eliminar_producto(id_producto)
+
+        elif opcion == "5":
+            print("Saliendo del sistema...")
+            break
