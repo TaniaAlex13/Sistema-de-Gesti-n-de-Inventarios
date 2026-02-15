@@ -13,3 +13,12 @@ def main():
         print("5. Salir")
 
         opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            id_producto = input("ID del producto: ")
+            nombre = input("Nombre: ")
+            cantidad = int(input("Cantidad: "))
+            precio = float(input("Precio: "))
+
+            producto = Producto(id_producto, nombre, cantidad, precio)
+            inventario.agregar_producto(producto)
