@@ -3,7 +3,7 @@ from modelos.producto import Producto
 
 def main():
     inventario = Inventario()
-    
+
     while True:
         print("\n===== MENÚ INVENTARIO =====")
         print("1. Agregar producto")
@@ -22,10 +22,10 @@ def main():
 
             producto = Producto(id_producto, nombre, cantidad, precio)
             inventario.agregar_producto(producto)
-            
-         elif opcion == "2":
+
+        elif opcion == "2":
             inventario.mostrar_productos()
-            
+
         elif opcion == "3":
             id_producto = input("Ingrese el ID a buscar: ")
             producto = inventario.buscar_producto(id_producto)
