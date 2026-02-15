@@ -22,3 +22,6 @@ def main():
 
             producto = Producto(id_producto, nombre, cantidad, precio)
             inventario.agregar_producto(producto)
+            
+         elif opcion == "2":
+            inventario.mostrar_productos()
