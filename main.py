@@ -42,3 +42,9 @@ def main():
         elif opcion == "5":
             print("Saliendo del sistema...")
             break
+
+        else:
+            print("Opción inválida.")
+
+if __name__ == "__main__":
+    main()
